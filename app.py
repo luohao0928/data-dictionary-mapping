@@ -4,13 +4,13 @@ import pandas as pd
 import os
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://gnuhealth:your_password@localhost:5432/gnuhealthdb'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://gnuhealth:0928liuyi@@localhost:5432/gnuhealthdb'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 # Define mapping result model
 class MappingResult(db.Model):
-    __tablename__ = 'data_mapping_result'
+    __tablename__ = 'data_mapping_rLIUyi@
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     platform_code = db.Column(db.String(50))
     platform_name = db.Column(db.String(200))
